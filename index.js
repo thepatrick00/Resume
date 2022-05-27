@@ -5,7 +5,7 @@ console.log(skills.frontend)
 console.log(contact.email)
 
 const {email, github, location, linkedin, phoneNumber} = contact;
-const headerContact = document.querySelector('.header__contact');
+const headerContact = document.querySelector('.header__right');
 headerContact.innerHTML = `
     <a class="email" href="mailto:${email}">${email}</a>
     <a class="github" href=${github}>${github}</a>
