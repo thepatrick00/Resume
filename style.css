@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 62.5%;
+    border: solid salmon;
+}
+.header__contact {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}

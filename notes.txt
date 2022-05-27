@@ -1,0 +1,23 @@
+think of what it would be if you handed your resume to your mother or father. The would not be technical.
+
+this is similar to how it is with a recuriuter. Make it easy for them to understand my skills and the value I can provide.
+
+
+
+/*
+what recuriters look for in junior dev: 
+1. a basic handle on technology 
+2. Passion and a level of curiosity for tech 
+3. Willingness to learn
+
+A recruiter will take 15 seconds scanning over your resume.
+
+* short bullet points, over long paragraphs.
+
+be clear and consise avoid adding fancy words just for the sake of it
+
+emplyment history, projects, education,
+
+PUT MOST VALUBALE SECTIONS AT THE TOP
+-Projects to the top
+*/
