@@ -1,13 +1,35 @@
+*, *::before, *::after {
+box-sizing: border-box;
+}
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
 body {
-    margin: 0;
-    text-align: center;
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+display: block;
+max-width: 100%;
+}
+input, button, textarea, select {
+font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: break-word;
+}
+
+body {
+    margin: 2rem auto;
+    max-width: 1000px;
 }
 header {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 62.5%;
-    border: solid salmon;
     gap: 1rem;
 }
 .header__left {
@@ -17,4 +39,24 @@ header {
     display: flex;
     flex-direction: column;
     text-align: left;
+}
+/* Sections */ 
+.subject {
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: .75rem;
+    margin: 1rem;
+}
+.projects {
+
+}
+.experience {
+
+}
+.education {
+
+}
+.personal {
+
 }
