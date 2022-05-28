@@ -12,7 +12,7 @@ function getSectionHtml(dataObj) {
     const html = [];
     const titleText = dataObj.title;
     
-    html.push(`<h3 class='subject'>${titleText}</h3>`);
+    html.push(`<h3 class='headline'><span>${titleText}</span></h3>`);
     
     for (const key in dataObj) {
         let {link, name, description, bulletPoints} = dataObj[key];
@@ -31,7 +31,7 @@ function getSectionHtml(dataObj) {
 
         html.push(
             `
-            <h2 class='subject__heading'>
+            <h2 class='headline__names'>
                 <a href=${link}>${name}</a>
             </h2>
             ${showDescription ? `<p>${description}</p>` : ''}

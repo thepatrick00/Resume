@@ -11,46 +11,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- <img class='pfp' src="./images/pfp.png" alt="Patrick Szydlowski"> -->
-        <div class="header__left">
-            <img src="./images/pfp.png">
-            <h1 class="name">
-                Patrick Szydlowski
-            </h1>
-            <h3 class="job-title">Front End Software Engineer</h3>
-        </div>
-        <div class="contact-info">
-            <div class="contact-info__part">
-                <img src="./images/send.svg" alt="email">
-                <a class="email" href="mailto:${email}">Email</a>
+    <main>
+        <header>
+            <div class="header__intro">
+                <img src="./images/pfp.png">
+                <div>
+                    <h1 class="name">Patrick Szydlowski</h1>
+                    <h3 class="job-title">Front End Software Engineer</h3>
+                </div>
             </div>
-            <div class="contact-info__part">
-                <img src="./images/github.svg" alt="github">
-                <a class="github" href=${github}>Github</a>
+            <div class="contact-info">
+                <div class="contact-info__part">
+                    <img src="./images/send.svg" alt="email">
+                    <a class="email" href="mailto:patrick@meetpatrick.dev">Email</a>
+                </div>
+                <div class="contact-info__part">
+                    <img src="./images/github.svg" alt="github">
+                    <a class="github" href="https://github.com/thepatrick00">Github</a>
+                </div>
+                <div class="contact-info__part">
+                    <img src="./images/linkedin.svg" alt="linkedin">
+                    <a class="linkedin" href='https://www.linkedin.com/in/patrick-szydlowski-aa0424188/'>LinkedIn</a>
+                </div>
+                <div class="contact-info__part">
+                    <img src="./images/map-pin.svg" alt="map-pin">
+                    <a class="location" href="geo:42.180813,-88.330175;u=35">Lake in the Hills, IL</a>
+                </div>
+                <div class="contact-info__part">
+                    <img src="./images/phone.svg" alt="phone">
+                    <a class="phoneNumber" href="tel://1-224-241-4232">224-241-4232</a>
+                </div>  
             </div>
-            <div class="contact-info__part">
-                <img src="./images/linkedin.svg" alt="linkedin">
-                <a class="linkedin" href=${linkedin}>LinkedIn</a>
-            </div>
-            <div class="contact-info__part">
-                <img src="./images/map-pin.svg" alt="map-pin">
-                <span class="location">Lake in the Hills</span>
-            </div>
-            <div class="contact-info__part">
-                <img src="./images/phone.svg" alt="phone">
-                <span class="phoneNumber">224-241-4232</span>
-            </div>  
-        </div>
-    </header>
-
-
-    <section class="skills"></section>
-    <section class="projects"></section>
-    <section class="experience"></section>
-    <section class="education"></section>
-    <section class="personal"></section>
-
+        </header>
+        
+        
+        <section class="skills"></section>
+        <section class="projects"></section>
+        <section class="experience"></section>
+        <section class="education"></section>
+        <section class="personal"></section>
+    </main>
+        
     <script type="module" src="index.js"></script>
 </body>
 </html>

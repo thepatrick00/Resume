@@ -11,7 +11,7 @@ const educationSection = document.querySelector('.education');
 const personalSection = document.querySelector('.personal');
 
 skillsSection.innerHTML = `
-    <h3 class='subject'>Skills</h3>
+    <h3 class='headline'><span>Skills<span></h3>
     <div class='skillCtr'>
         <div class="skill">
             <p class='skill__group'>Front End:</p>
@@ -37,13 +37,13 @@ projectsSection.innerHTML = `${getSectionHtml(projects)}`;
 experienceSection.innerHTML = `${getSectionHtml(experience)}`;
 
 educationSection.innerHTML = `
-    <h3 class='subject'>Education</h3>
+    <h3 class='headline'><span>Education</span></h3>
     <ul class="education__ul">
         <li>Scrimba Frontend Developer Carear Path Completion</li>
     </ul>
 `
 
 personalSection.innerHTML = `
-    <h3 class='subject'>Personal</h3>
+    <h3 class='headline'><span>Personal</span></h3>
     <p>In 2021, I constantly went on bike rides and hiking, I made a YouTube channel with 800k views, and start learning to code.</p>
 `
