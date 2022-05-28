@@ -2,17 +2,10 @@ const experience = {
     title: "Experience",
     shopify: {
         name: 'Shopify Developer',
+        link: '',
         bulletPoints: [
-            `Worked with NPM packages to make the quiz app unique`,
-            `Created a responsive design that worked for any layout`,
-            `Went above & beyond,by adding extra functionality to the web app`
-        ]
-    },
-    resume: {
-        name: 'Resume Builder',
-        bulletPoints: [
-            `Built a simple & dynamic resume creator. Users only need to add their own text to the JS data files, to create a resume.`,
-            ``,
+            `Listened to clients problems and came up with time and cost effective solutions.`,
+            `Consulted clients on solutions for their eccomerce problems`
         ]
     }
 }

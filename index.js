@@ -4,17 +4,6 @@ import projects from './data/projectsData.js';
 import experience from './data/experienceData.js';
 import {getSectionHtml} from './utils.js';
 
-
-const {email, github, location, linkedin, phoneNumber} = contact;
-const headerContact = document.querySelector('.contact-info');
-headerContact.innerHTML = `
-    <a class="email" href="mailto:${email}">${email}</a>
-    <a class="github" href=${github}>Github</a>
-    <a class="linkedin" href=${linkedin}>Linkedin</a>
-    <span class="location">${location}</span>
-    <span class="phoneNumber">${phoneNumber}</span>
-`;
-
 const skillsSection = document.querySelector('.skills');
 const projectsSection = document.querySelector('.projects');
 const experienceSection = document.querySelector('.experience');
@@ -49,9 +38,8 @@ experienceSection.innerHTML = `${getSectionHtml(experience)}`;
 
 educationSection.innerHTML = `
     <h3 class='subject'>Education</h3>
-    <ul>
+    <ul class="education__ul">
         <li>Scrimba Frontend Developer Carear Path Completion</li>
-        <li></li>
     </ul>
 `
 

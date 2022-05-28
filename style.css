@@ -1,3 +1,11 @@
+:root {
+    --blue-dark: #000B4f;
+    --blue-mid: #20368F;
+    --blue-light: #829CD0;
+    --bg: #EBEBEB;
+    --gray-light: #6D6D6D;
+    --gray-dark: #323232;
+}
 *, *::before, *::after {
 box-sizing: border-box;
 }
@@ -24,13 +32,15 @@ overflow-wrap: break-word;
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat';
     font-weight: 400;
+    color: var(--blue-dark);
 }
-
+a {
+    color: var(--blue-mid);
+}
 body {
     margin: 2rem auto;
     max-width: 800px;
     font-family: 'Source Sans Pro';
-    border: 1px solid black;
 }
 section {
     padding-bottom: .5em;
@@ -41,14 +51,29 @@ header {
 .name {
     font-weight: 500;
 }
-.job-title {
-    
+.header__left {
+    position: relative;
+}
+.header__left > img {
+    display: block;
+    width: 80px;
+    position: absolute;
+    top: 0;
+    left: 10rem;
+    border-radius: 20px;
+}
+.header__left > img:hover {
+    width: 220px;
 }
 .contact-info {
     display: flex;
     justify-content: space-evenly;
     margin-top: 1rem;
-    margin-bottom: -1rem;
+    margin-bottom: -.95rem;
+}
+.contact-info__part {
+    display: flex;
+    column-gap: 5px;
 }
 .pfp {
     width: 20%;
@@ -64,6 +89,9 @@ header {
 }
 .subject__heading {
     margin-top: 16px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: fit-content;
 }
 .skill__group {
     font-weight: bold;
@@ -76,4 +104,39 @@ header {
 .skill {
     display: flex;
     gap: .5rem;
+}
+.education__ul {
+    list-style: none;
+}
+
+@media print {
+    /* HIDE UNWANTED ELEMENTS  display: none;*/
+
+    /* Global Typography Reset 
+    serif is nicer to read on paper
+    pt unit for paper
+    black text is neccessary
+    */
+    body {
+        font-family: Georgia, serif; 
+        background: none;
+        color: #000;
+        margin: 0;
+    }
+
+    a:link {
+        margin: 0;
+    }
+    
+    a::after {
+        content: " ["attr(href)"]";
+    }
+    a:link,
+    a:visited {
+        color: black;
+        background: none;
+    }
+    .contact-info {
+        flex-wrap: wrap;
+    }
 }

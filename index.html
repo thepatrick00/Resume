@@ -14,20 +14,42 @@
     <header>
         <!-- <img class='pfp' src="./images/pfp.png" alt="Patrick Szydlowski"> -->
         <div class="header__left">
-            <h1 class="name">Patrick Szydlowski</h1>
+            <img src="./images/pfp.png">
+            <h1 class="name">
+                Patrick Szydlowski
+            </h1>
             <h3 class="job-title">Front End Software Engineer</h3>
         </div>
-        <div class="contact-info"></div>
+        <div class="contact-info">
+            <div class="contact-info__part">
+                <img src="./images/send.svg" alt="email">
+                <a class="email" href="mailto:${email}">Email</a>
+            </div>
+            <div class="contact-info__part">
+                <img src="./images/github.svg" alt="github">
+                <a class="github" href=${github}>Github</a>
+            </div>
+            <div class="contact-info__part">
+                <img src="./images/linkedin.svg" alt="linkedin">
+                <a class="linkedin" href=${linkedin}>LinkedIn</a>
+            </div>
+            <div class="contact-info__part">
+                <img src="./images/map-pin.svg" alt="map-pin">
+                <span class="location">Lake in the Hills</span>
+            </div>
+            <div class="contact-info__part">
+                <img src="./images/phone.svg" alt="phone">
+                <span class="phoneNumber">224-241-4232</span>
+            </div>  
+        </div>
     </header>
-    <section class="skills">
-        
-    </section>
+
+
+    <section class="skills"></section>
     <section class="projects"></section>
     <section class="experience"></section>
     <section class="education"></section>
     <section class="personal"></section>
-
-    
 
     <script type="module" src="index.js"></script>
 </body>

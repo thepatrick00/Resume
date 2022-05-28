@@ -11,23 +11,31 @@ function getBulletPointHtml(bulletPointArr) {
 function getSectionHtml(dataObj) {
     const html = [];
     const titleText = dataObj.title;
-    let showDescription = true;
-
+    
     html.push(`<h3 class='subject'>${titleText}</h3>`);
-
+    
     for (const key in dataObj) {
+        let {link, name, description, bulletPoints} = dataObj[key];
+        let showDescription = true;
+
         if(key === 'title') {
             continue;
-        } else if (dataObj[key].description === undefined) {
+        } else if (description === undefined) {
             showDescription = false
         }
-        console.log('key:', key)
+
+        if(link === ''){
+            link = "https://github.com/thepatrick00"
+        }
+        
 
         html.push(
             `
-            <h2 class='subject__heading'>${dataObj[key].name}</h2>
-            ${showDescription ? `<p>${dataObj[key].description}</p>` : ''}
-            ${getBulletPointHtml(dataObj[key].bulletPoints)}
+            <h2 class='subject__heading'>
+                <a href=${link}>${name}</a>
+            </h2>
+            ${showDescription ? `<p>${description}</p>` : ''}
+            ${getBulletPointHtml(bulletPoints)}
             `
         )  
     };
