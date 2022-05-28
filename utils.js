@@ -8,41 +8,32 @@ function getBulletPointHtml(bulletPointArr) {
 
 
 /* Used for data that has object of objects */
-function getProjectHtml(projects) {
-    const projectHtml = [];
+function getSectionHtml(dataObj) {
+    const html = [];
+    const titleText = dataObj.title;
+    let showDescription = true;
 
-    projectHtml.push(`<h1 class='subject'>Projects</h1>`)
-
-    for (const project in projects) {
-        projectHtml.push(`
-        <h2 class='heading'>${projects[project].name}</h2>
-        <p>${projects[project].description}</p>
-        ${getBulletPointHtml(projects[project].bulletPoints)}
-        `)
-    };
-
-    return projectHtml.join('');
-};
-
-function getExpHtml(dataObj) {
-    const projectHtml = [];
-
-    projectHtml.push(`<h1 class='subject'>Projects</h1>`)
+    html.push(`<h3 class='subject'>${titleText}</h3>`);
 
     for (const key in dataObj) {
-        projectHtml
-        .push(
+        if(key === 'title') {
+            continue;
+        } else if (dataObj[key].description === undefined) {
+            showDescription = false
+        }
+        console.log('key:', key)
+
+        html.push(
             `
-            <h2 class='heading'>${dataObj[key].name}</h2>
-            <p>${dataObj[key].description}</p>
+            <h2 class='subject__heading'>${dataObj[key].name}</h2>
+            ${showDescription ? `<p>${dataObj[key].description}</p>` : ''}
             ${getBulletPointHtml(dataObj[key].bulletPoints)}
             `
-        )
+        )  
     };
-
-    return projectHtml.join('');
+    return html.join('');
 };
 
 
 
-export {getProjectHtml, getExpHtml }
+export {getSectionHtml}

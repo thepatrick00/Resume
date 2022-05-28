@@ -1,4 +1,5 @@
 const experience = {
+    title: "Experience",
     shopify: {
         name: 'Shopify Developer',
         bulletPoints: [

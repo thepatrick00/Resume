@@ -21,42 +21,59 @@ font: inherit;
 p, h1, h2, h3, h4, h5, h6 {
 overflow-wrap: break-word;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
 
 body {
     margin: 2rem auto;
-    max-width: 1000px;
+    max-width: 800px;
+    font-family: 'Source Sans Pro';
+    border: 1px solid black;
+}
+section {
+    padding-bottom: .5em;
 }
 header {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    gap: 1rem;
+    text-align: center;
 }
-.header__left {
-    text-align: left;
+.name {
+    font-weight: 500;
 }
-.header__right {
+.job-title {
+    
+}
+.contact-info {
     display: flex;
-    flex-direction: column;
-    text-align: left;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+.pfp {
+    width: 20%;
+    border-radius: 20px;
 }
 /* Sections */ 
 .subject {
     text-align: center;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: .75rem;
-    margin: 1rem;
+    border-top: 1px solid rgb(78, 78, 78);;
+    border-bottom: 1px solid rgb(78, 78, 78);
+    padding: .25rem;
+    margin: 1rem 0;
 }
-.projects {
-
+.subject__heading {
+    margin-top: 16px;
 }
-.experience {
-
+.skill__group {
+    font-weight: bold;
 }
-.education {
-
+.skillCtr {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
 }
-.personal {
-
+.skill {
+    display: flex;
+    gap: .5rem;
 }
