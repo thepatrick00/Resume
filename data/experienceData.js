@@ -1,7 +1,7 @@
 const experience = {
     title: "Experience",
     shopify: {
-        name: 'Shopify Developer',
+        name: 'Freelance Shopify Developer',
         link: '',
         bulletPoints: [
             `Listened to clients problems and came up with time and cost effective solutions.`,

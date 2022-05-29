@@ -12,20 +12,20 @@ const personalSection = document.querySelector('.personal');
 
 skillsSection.innerHTML = `
     <h3 class='headline'><span>Skills<span></h3>
-    <div class='skillCtr'>
-        <div class="skill">
+    <div class='skills__ctr'>
+        <div class="skills__ctr--skill">
             <p class='skill__group'>Front End:</p>
             <p>${skills.frontend}</p>
         </div>
-        <div class="skill">
+        <div class="skills__ctr--skill">
             <p class='skill__group'>Back End:</p>
             <p>${skills.backend}</p>
         </div>
-        <div class="skill">
+        <div class="skills__ctr--skill">
             <p class='skill__group'>Principles:</p>
             <p>${skills.principles}</p>
         </div>
-        <div class="skill">
+        <div class="skills__ctr--skill">
             <p class='skill__group'>Others:</p>
             <p>${skills.others}</p>
         </div>
