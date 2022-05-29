@@ -167,12 +167,17 @@ ul li::before {
         color: #000;
         margin: 0;
     }
+    * {
+        color: #000;
+    }
 
     a:link {
         margin: 0;
     }
-    
-    a::after {
+
+    [class=email]::after,
+    [class=github]::after,
+    [class=linkedin]::after {
         content: " ["attr(href)"]";
     }
     a:link,
